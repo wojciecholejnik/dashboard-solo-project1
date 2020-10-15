@@ -1,0 +1,77 @@
+/*TOPBAR LAYOUT*/
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $color-light-background;
+  border-bottom: $border-topbar;
+  position: fixed;
+  right: 0;
+
+  .wallet {
+    width: 16vw;
+  }
+  
+  .notifications {
+    width: 5vw;
+  }
+  
+  .profile {
+    width: 15vw;
+  }
+  
+  .quit {
+    width: 5vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topbar-tile .profile-name {
+    display: none;
+  }
+
+  .topbar {
+    .wallet {
+      flex: 8;
+    }
+    
+    .notifications {
+      flex: 2;
+    }
+    
+    .profile {
+      flex: 2;
+    }
+    
+    .quit {
+      flex: 2;
+    }
+  }
+
+  .topbar-tile {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .topbar-tile .profile-name {
+    display: flex;
+  }
+
+  .topbar {
+    .wallet {
+      flex: 6;
+    }
+    
+    .notifications {
+      flex: 2;
+    }
+    
+    .profile {
+      flex: 4;
+    }
+    
+    .quit {
+      flex: 2;
+    }
+  }
+}

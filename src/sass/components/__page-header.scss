@@ -1,0 +1,19 @@
+.content-container {
+  .page-header-container {
+    height: 5vh;
+    min-height: 6px;
+    border-bottom: $border-topbar;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $h-color;
+    margin-left: 25px;
+  }
+}

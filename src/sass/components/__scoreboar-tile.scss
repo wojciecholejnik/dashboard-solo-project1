@@ -1,0 +1,15 @@
+.scoreboard-tile {
+  border-bottom: $border-topbar;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .scoreboard-key, .scoreboard-value {
+
+    font-size: 16px;
+    color: $h-color;
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+}

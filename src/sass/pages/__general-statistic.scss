@@ -1,0 +1,36 @@
+/* Media */
+@media screen and (max-width: $mid_devices) {
+  .content-container {
+    padding: 0 5px 5px 5px;
+  }
+
+  #score-board {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 45px 45px 45px;
+  }
+
+  .scoreboard-tile {
+    justify-self: center;
+    width: 40vw;
+
+    .scoreboard-key p, .scoreboard-value p  {
+      font-size: 22px;
+    }
+  }
+
+  .graf-button .button-inner-container p {
+    font-size: 18px;
+  }
+
+  .graph-container .graph-image {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .graph-container .graph-image {
+    width: 90%;
+    padding: 0 5px;
+  }
+}

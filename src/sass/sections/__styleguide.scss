@@ -1,0 +1,107 @@
+.styleguide-container {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 10px auto;
+
+  .styleguide-column {
+    flex: 1;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+    &:last-child {
+      border-left: none;
+    }
+  }
+
+  .styleguide-item {
+    border-bottom: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .styleguide-description {
+    font: $font-family;
+    margin: 5px 5px;
+    width: 130px;
+  }
+
+  .styleguide-item > .notifications, .styleguide-item > .quit {
+    width: 45px;
+    height: 45px;
+  }
+
+  .styleguide-item > .profile {
+    width: 45px;
+    height: 45px;
+    
+    .profile-name {
+      display: none;
+    }
+  }
+
+  .styleguide-item .sidebar-menu-item {
+    height: 55px;
+    width: 130px;
+  }
+
+  .styleguide-item .date-filter, .styleguide-item .page-header-container {
+    border: none;
+  }
+
+  .styleguide-item > .content-container {
+    min-height: 50px;
+  }
+  
+  .styleguide-item .notification-light {
+    top: 20%;
+  }
+
+  .styleguide-item .scoreboard-tile {
+    max-width: 250px;
+  }
+
+  .styleguide-item .links-tile {
+    display: flex;
+    border: none;
+  }
+
+  .styleguide-item .link-icon {
+    width: 40px;
+  }
+}
+
+.styleguide-sidebar-icon-cont {
+  background-color: $color-dark-background;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 15px;
+
+}
+
+.styleguide-item .styleguide-cont-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.styleguide-cont-1 > a {
+  margin-bottom: 15px;
+}
+
+/* Media */
+@media screen and (max-width: 850px) {
+  .styleguide-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .styleguide-container .styleguide-column:last-child {
+    border-left: 2px solid black;
+  }
+}

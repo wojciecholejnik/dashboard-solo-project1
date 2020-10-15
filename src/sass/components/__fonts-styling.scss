@@ -1,0 +1,37 @@
+* {
+  font-family: $font-family;
+}
+
+.page-header-text {
+  color: $h-color;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-header-text {
+  color: $h-color;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text {
+  color: $p-color;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.large-link, .small-link {
+  font-size: 16px;
+  color: $color-pagelink;
+  font-weight: 300;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+.small-link {
+  font-size: 13px;
+}

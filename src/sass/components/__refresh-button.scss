@@ -1,0 +1,17 @@
+.refresh-button {
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  
+  svg {
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    background-color: $color-orange-button;
+    border-radius: 5%;
+
+    &:hover {
+      background-color: $color-pagelink;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.links-list-container {
+  display: flex;
+  justify-content: center;
+
+  .links-list-inner {
+    width: 60%;
+
+    :hover {
+      background-color: $color-main-container-outer;
+    }
+
+    &:last-child{
+      border-bottom: $border-topbar;
+    }
+  }
+}
+/* Media */
+@media screen and (max-width: 1050px) and (min-width: 769px) {
+  .links-list-container .links-list-inner {
+    width: 95%;
+  }
+}

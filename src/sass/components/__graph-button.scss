@@ -1,0 +1,45 @@
+.graf-button {
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-right: 10px;
+  
+  .sign {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;  
+  }
+  
+  p {
+    color: $h-color;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .signups {
+    background-color: $color-blue;
+  }
+
+  .ftd {
+    background-color: $color-orange-button;
+  }
+
+  .earned {
+    background-color: $color-green;
+  }
+
+  &.active {
+    background: $color-main-container-outer;
+  }
+}
+
+/* MEDIA */
+@media screen and (max-width: $mid_devices) {
+  .graph-container a {
+    width: 100%;
+  }
+}

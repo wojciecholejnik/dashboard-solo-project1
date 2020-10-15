@@ -1,0 +1,58 @@
+.sidebar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 8vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-dark-background;
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo{
+    padding: 0 5px;
+  }
+
+  svg {
+    color: $p-white-color;
+    width: 25px;
+    height: 25px;
+    padding: 0 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* MEDIA */
+@media screen and (max-width: $mid_devices) {
+  .sidebar-nav .logo {
+    display: none;
+  }
+
+  .sidebar:hover {
+    cursor: pointer;
+    width: 150px;
+    z-index: 3;
+  
+    .sidebar-menu-item a {
+      display: flex;
+    }
+  
+    .sidebar-nav .logo {
+      display: flex;
+    }
+
+    .manager {
+      display: block;
+    }
+  
+    .manager-name {
+      display: block;
+      padding-left: 8px;
+    }
+  }
+}

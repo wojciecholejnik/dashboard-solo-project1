@@ -1,0 +1,43 @@
+.wallet-dropdown {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: $color-main-container-outer;
+  position: absolute;
+  top: 77px;
+
+  .wallet-drop-tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $border-topbar;
+
+    .index, .value {
+      margin: 8px 8px;
+      color: $h-color;
+    }
+
+    .value {
+      color: black;
+    }
+  }
+}
+
+.wallet:hover {
+  .wallet-dropdown {
+    display: flex;
+  }
+
+  .topbar-icon-dropdown {
+    transform: rotateX(180deg);
+    transition: 1s;
+  }
+}
+
+/* Media */
+@media screen and (max-width: $mid_devices) {
+  .wallet-dropdown {
+    top: 53px;
+  } 
+}
+

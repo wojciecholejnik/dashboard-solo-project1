@@ -1,0 +1,25 @@
+.topbar-icon {
+  height: 23px;
+  padding: 0 10px;
+  filter: invert(.5);
+  transition: 1s;
+}
+
+.topbar-icon-dropdown {
+  height: 16px;
+}
+
+.notification-light {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-orange-button;
+  left: 50%;
+  top: 30%;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

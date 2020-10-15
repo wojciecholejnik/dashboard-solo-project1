@@ -1,0 +1,33 @@
+.graph-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 100%;
+
+
+  .graph-signs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .graph-image {
+    width: 70%;
+    margin-top: 50px;
+  }
+
+  .graph-title {
+    width: 100%;
+
+    h4 {
+      margin-left: 25px;
+      font-size: 16px;
+      color: $h-color;
+      font-weight: 500;
+      font-family: "Roboto";
+    }
+  }
+}

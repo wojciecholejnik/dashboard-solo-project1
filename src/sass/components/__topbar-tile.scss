@@ -1,0 +1,44 @@
+.topbar-tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-left: $border-topbar;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    background-color: $color-main-container-outer;
+
+    .topbar-icon {
+      filter: none;
+    }
+
+    p {
+      color: black;
+    }
+
+    .topbar-icon-dropdown {
+      filter: invert(.5);
+    }
+  }
+  
+
+  p {
+    font-size: 20px;
+    color: $h-color;
+    font-weight: 400;
+    padding-right: 10px;
+  }
+
+  .profile-name {
+    color: $profile-name-color;
+    font-size: 15px;
+    font-weight: 300;
+    padding-right: 10px;
+  }
+}
+
+.topbar .notifications, .topbar .quit {
+  justify-content: center;
+}

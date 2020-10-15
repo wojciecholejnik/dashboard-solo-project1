@@ -1,0 +1,16 @@
+.scoreboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  padding: 20px;
+  border-bottom: $border-topbar;
+  justify-content: center;
+  align-items: center;
+
+  .scoreboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 42px 42px;
+    column-gap: 50px;
+  }
+}
